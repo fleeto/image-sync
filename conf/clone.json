@@ -1,0 +1,9 @@
+{
+  "alpine": {
+    "sourceRepo": "alpine",
+    "tagFilter": "^3\\.9.*?$",
+    "later-than": "",
+    "targetPattern":"dustise/{repo}:{tag}"
+  }
+
+}
