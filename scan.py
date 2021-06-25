@@ -10,7 +10,7 @@ with open("conf/scan.json") as config_file:
 
 result = {}
 date_str = datetime.datetime.now().strftime("%Y%m%d%H")
-output_home = os.path.join("output", "scan" + date_str)
+output_home = os.path.join("output", "scan-" + date_str)
 if not os.path.exists(output_home):
     os.mkdir(output_home)
 
