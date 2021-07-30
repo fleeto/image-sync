@@ -4,7 +4,10 @@
 
 ## 构建
 
-执行命令 `./build.sh [image-tag]` 生成镜像。
+执行命令 `./build.sh [image-name]` 生成镜像。
+
+### 运行镜像
+`docker run -v /absolute_path_to_conf/conf:/atomworker/conf -it ${image-name}:latest`
 
 ## 镜像复制（clone.py）
 
