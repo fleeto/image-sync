@@ -12,7 +12,7 @@ RUN apk add -u "python3=3.8.10-r0" && \
     rm -Rf /tmp/install
 ENV GITHUB_TOKEN=""
 COPY --from=builder /go/bin/cosign /usr/local/bin
-COPY *.py /atomworker
+COPY *.py /atomworker/
 COPY franken /atomworker/franken
 
 WORKDIR /atomworker
